@@ -96,7 +96,7 @@ class UserController {
 					phoneNumber: loadedUser.phoneNumber,
 					userId: loadedUser._id.toString(),
 				},
-					process.env.JWT_SECRET,
+					"superidol",
 					{
 						expiresIn: '1h'
 					}

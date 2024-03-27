@@ -16,7 +16,7 @@ class Auth {
 
 			// using bearer token
 			let decodedToken = req.get('authorization').split(' ')[1];
-			var user = jwt.verify(decodedToken, process.env.JWT_SECRET);
+			var user = jwt.verify(decodedToken, "superidol");
 
 			User.findOne({ _id: user.userId, status: 1 })
 				.then((data) => {

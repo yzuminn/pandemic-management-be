@@ -52,9 +52,9 @@ app.use((errors, req, res, next) => {
 });
 
 mongoose
-	.connect(process.env.MONGODB_URL)
+	.connect("mongodb+srv://datn:datn@atlascluster.hyrcut6.mongodb.net")
 	.then(() => {
-		const PORT = process.env.PORT || 4000;
+		const PORT = 9000;
 		app.listen(PORT, () => {
 			console.log("App listening");
 		});
