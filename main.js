@@ -52,7 +52,7 @@ app.use((errors, req, res, next) => {
 });
 
 mongoose
-	.connect("mongodb+srv://datn:datn@atlascluster.hyrcut6.mongodb.net")
+	.connect("mongodb+srv://nguyenmanhthanh01022001:AYuH5b3SUaXOrDCZ@cluster0.pdzgixr.mongodb.net")
 	.then(() => {
 		const PORT = 9000;
 		app.listen(PORT, () => {
