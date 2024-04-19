@@ -8,8 +8,14 @@ import authRouter from "./routes/auth-route.js";
 import personInfoRouter from "./routes/person-info-route.js";
 import medicalInfoRouter from "./routes/medical-info-route.js";
 import adminInfoRouter from "./routes/admin-info-route.js";
+import moveDeclarationRouter from "./routes/move-declaration-route.js";
+import entryDeclarationRouter from "./routes/entry-declaration-route.js";
+import domesticGuestsRouter from "./routes/domestic-guests-route.js";
 import accountRouter from "./routes/account-router.js";
+import notificationRouter from "./routes/notification-router.js"
 import unitRouter from "./routes/unit-router.js"
+import listDeclarationRouter from "./routes/list-declaration-router.js"
+import infoQrcodeRouter from "./routes/info-qrcode-router.js"
 
 const __dirname = path.resolve();
 
@@ -32,8 +38,14 @@ app.use("/auth", authRouter);
 app.use("/personinfo", personInfoRouter);
 app.use("/medicalinfo", medicalInfoRouter);
 app.use("/admininfo", adminInfoRouter);
+app.use("/movedeclaration", moveDeclarationRouter);
+app.use("/entrydeclaration", entryDeclarationRouter);
+app.use("/domesticguests", domesticGuestsRouter);
 app.use("/account", accountRouter);
+app.use("/notification", notificationRouter);
 app.use("/unit", unitRouter);
+app.use("/listDeclaration", listDeclarationRouter);
+app.use("/qrcode", infoQrcodeRouter);
 
 // for test purpose only
 app.get("/", (req, res, next) => {
