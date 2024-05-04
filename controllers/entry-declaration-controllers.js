@@ -89,7 +89,7 @@ class EntryDeclarationController {
                         .then(() => {
                             return res.status(201).json({
                                 message: "Update a domestic entry declaration successfully",
-                                link: process.env.SERVER_URL + "/entrydeclaration/getmovedeclaration"
+                                link: "http://localhost:9000" + "/entrydeclaration/getmovedeclaration"
                             });
                         })
                         .catch((err) => {
@@ -162,7 +162,7 @@ class EntryDeclarationController {
                         .then((result) => {
                             return res.status(201).json({
                                 message: "Add a domestic entry declaration successfully",
-                                link: process.env.SERVER_URL + "/entrydeclaration/getmovedeclaration"
+                                link: "http://localhost:9000" + "/entrydeclaration/getmovedeclaration"
                             });
                         })
                         .catch((err) => {

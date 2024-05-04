@@ -49,7 +49,7 @@ class DomesticGuestsController {
                         .then(() => {
                             return res.status(201).json({
                                 message: "Update a domestic guests successfully",
-                                link: process.env.SERVER_URL + "/domesticguests/getdomesticguests"
+                                link: "http://localhost:9000" + "/domesticguests/getdomesticguests"
                             });
                         })
                         .catch((err) => {
@@ -82,7 +82,7 @@ class DomesticGuestsController {
                         .then((result) => {
                             return res.status(201).json({
                                 message: "Add a domestic guests successfully",
-                                link: process.env.SERVER_URL + "/domesticguests/getdomesticguests"
+                                link: "http://localhost:9000" + "/domesticguests/getdomesticguests"
                             });
                         })
                         .catch((err) => {

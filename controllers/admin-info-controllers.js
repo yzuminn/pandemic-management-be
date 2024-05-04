@@ -59,7 +59,7 @@ class AdminController {
 					.then(() => {
 						return res.status(201).json({
 							message: "Successful registration information",
-							link: process.env.SERVER_URL + "/admininfo/getadmin",
+							link: "http://localhost:9000" + "/admininfo/getadmin",
 						});
 					})
 					.catch((err) => {
@@ -103,7 +103,7 @@ class AdminController {
 			.then((result) => {
 				return res.status(201).json({
 					message: "Update infomation successful",
-					link: process.env.SERVER_URL + "/admininfo/getadmin",
+					link: "http://localhost:9000" + "/admininfo/getadmin",
 				});
 			})
 			.catch((err) => {

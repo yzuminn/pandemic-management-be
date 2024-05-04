@@ -62,7 +62,7 @@ class MoveDeclarationController {
                         .then(() => {
                             return res.status(201).json({
                                 message: "Update a move delcaration successfully",
-                                link: process.env.SERVER_URL + "/movedeclaration/getmovedeclaration"
+                                link: "http://localhost:9000" + "/movedeclaration/getmovedeclaration"
                             });
                         })
                         .catch((err) => {
@@ -107,7 +107,7 @@ class MoveDeclarationController {
                         .then((result) => {
                             return res.status(201).json({
                                 message: "Add a move delcaration successfully",
-                                link: process.env.SERVER_URL + "/movedeclaration/getmovedeclaration"
+                                link: "http://localhost:9000" + "/movedeclaration/getmovedeclaration"
                             });
                         })
                         .catch((err) => {

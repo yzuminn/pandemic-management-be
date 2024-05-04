@@ -89,7 +89,7 @@ class PersonController {
 					.then(() => {
 						return res.status(201).json({
 							message: "Successful registration information",
-							link: process.env.SERVER_URL + "/personinfo/getperson",
+							link: "http://localhost:9000" + "/personinfo/getperson",
 						});
 					})
 					.catch((err) => {
@@ -133,7 +133,7 @@ class PersonController {
 			.then(() => {
 				return res.status(201).json({
 					message: "Update infomation successful",
-					link: process.env.SERVER_URL + "/personinfo/getperson",
+					link: "http://localhost:9000" + "/personinfo/getperson",
 				});
 			})
 			.catch((err) => {

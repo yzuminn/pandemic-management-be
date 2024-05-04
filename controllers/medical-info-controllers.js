@@ -60,7 +60,7 @@ class MedicalController {
 					.then(() => {
 						return res.status(201).json({
 							message: "Successful registration information",
-							link: process.env.SERVER_URL + "/medicalinfo/getmedical",
+							link: "http://localhost:9000" + "/medicalinfo/getmedical",
 						});
 					})
 					.catch((err) => {
@@ -104,7 +104,7 @@ class MedicalController {
 			.then((result) => {
 				return res.status(201).json({
 					message: "Update infomation successful",
-					link: process.env.SERVER_URL + "/medicalinfo/getmedical",
+					link: "http://localhost:9000" + "/medicalinfo/getmedical",
 				});
 			})
 			.catch((err) => {
